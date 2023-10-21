@@ -74,6 +74,7 @@ body{
 .bike__column--slider{
     flex-basis: 630px;
     margin-left: 30px;
+    max-width: 630px;
 }
 
 .bike__title{
