@@ -53,11 +53,11 @@ body{
 
 .menu__link{
     text-transform: uppercase;
-    padding: 43px 20px ;
-    transition: all 3s;
+    padding: 42px 20px ;
+    transition: all .3s;
 }
 
-.menu__list:hover{
+.menu__link:hover{
     background-color: #131313;
     color: #fff;
 }
@@ -107,4 +107,63 @@ body{
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 1.1em;
+}
+
+.bike__slider, .slick-dots{
+    right: 0;
+    top: 50px;
+}
+
+.slick-dots{
+    position: absolute;
+}
+
+.slick-dots li + li{
+    padding-top: 10px;
+
+}
+
+.slick-dots button{
+    font-size: 0;
+    padding: 0;
+    border: none;
+    background-color: #131313;
+    width: 2px;
+    height: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+.slick-dots button:hover,
+.slick-active button{
+    background-color: #ff4040;
+}
+
+.bike__list{
+    margin-top: 58px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bike__list-item{
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 58px;
+}
+
+.bike__list-num{
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.bike__list-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin: auto 0;
 }
